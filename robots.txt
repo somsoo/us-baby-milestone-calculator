@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://us-baby-milestone-calculator.enjoy-onepage.com/sitemap.xml
