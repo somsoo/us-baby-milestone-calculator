@@ -1,308 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="/favicon.ico">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Baby Leap Calculator | Wonder Weeks &amp; Growth Milestones</title>
-    <meta name="description" content="Calculate your baby's developmental mental leaps based on due date. Understand fussy phases and emerging motor skills.">
-    <link rel="canonical" href="https://us-baby-milestone-calculator.enjoy-onepage.com/">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Baby Leap Calculator | Wonder Weeks &amp; Growth Milestones">
-    <meta property="og:description" content="Calculate your baby's developmental mental leaps based on due date. Understand fussy phases and emerging motor skills.">
-    <meta property="og:url" content="https://us-baby-milestone-calculator.enjoy-onepage.com/">
-    <meta property="og:site_name" content="Baby Developmental Leap Calculator">
-    <meta property="og:image" content="https://us-baby-milestone-calculator.enjoy-onepage.com/og-image.png">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Baby Leap Calculator | Wonder Weeks &amp; Growth Milestones">
-    <meta name="twitter:description" content="Calculate your baby's developmental mental leaps based on due date. Understand fussy phases and emerging motor skills.">
-    <meta name="twitter:image" content="https://us-baby-milestone-calculator.enjoy-onepage.com/og-image.png">
-
-    <!-- Schema.org WebApplication -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baby Leap Calculator | Mental Leap Weeks by Due Date</title>
+<meta name="description" content="Enter your due date to see all 10 mental leap windows with exact dates, the leap your baby is in now and how many days until the next one.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://us-baby-milestone-calculator.enjoy-onepage.com/">
+<meta name="theme-color" content="#7c3aed">
+<link rel="icon" href="/favicon.ico">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Baby Leap Calculator">
+<meta property="og:title" content="Baby Leap Calculator | Mental Leap Weeks by Due Date">
+<meta property="og:description" content="Enter your due date to see all 10 mental leap windows with exact dates, the leap your baby is in now and how many days until the next one.">
+<meta property="og:url" content="https://us-baby-milestone-calculator.enjoy-onepage.com/">
+<meta property="og:image" content="https://us-baby-milestone-calculator.enjoy-onepage.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Baby Leap Calculator | Mental Leap Weeks by Due Date">
+<meta name="twitter:description" content="Enter your due date to see all 10 mental leap windows with exact dates, the leap your baby is in now and how many days until the next one.">
+<meta name="twitter:image" content="https://us-baby-milestone-calculator.enjoy-onepage.com/og-image.png">
+<link rel="alternate" type="application/rss+xml" title="Baby Leap Calculator RSS" href="https://us-baby-milestone-calculator.enjoy-onepage.com/rss.xml">
+<link rel="sitemap" type="application/xml" href="https://us-baby-milestone-calculator.enjoy-onepage.com/sitemap.xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "Baby Developmental Leap Calculator",
+      "@id": "https://us-baby-milestone-calculator.enjoy-onepage.com/#webapp",
+      "name": "Baby Leap Calculator",
       "url": "https://us-baby-milestone-calculator.enjoy-onepage.com/",
-      "description": "Calculate your baby's developmental mental leaps based on due date. Understand fussy phases and emerging motor skills.",
-      "applicationCategory": "HealthApplication",
+      "applicationCategory": "LifestyleApplication",
       "operatingSystem": "All",
-      "inLanguage": "en-US",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
+      "inLanguage": "en",
+      "description": "A free calculator that turns your baby's due date into the dates of all 10 mental leap windows, shows the leap your baby is in now and counts the days to the next one. Everything runs in your browser.",
+      "image": "https://us-baby-milestone-calculator.enjoy-onepage.com/og-image.png",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://us-baby-milestone-calculator.enjoy-onepage.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Why use the due date instead of the birth date?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Leap timing follows how far development has come since conception, so it is counted from the due date. A baby born two weeks early usually reaches each leap about two weeks later by birthday, and a baby born late reaches it earlier." } },
+        { "@type": "Question", "name": "How long does a leap last?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It varies. The fussy phase can last from a day to several weeks, and the windows in the table show when signs are most likely, not a fixed schedule. Some babies show very few signs." } },
+        { "@type": "Question", "name": "My baby was born early. What do I enter?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Enter the original due date. If you only know the birth date, open 'Only know the birth date?' and enter the birth date with the weeks and days of pregnancy at birth. The calculator works out the due date for you." } },
+        { "@type": "Question", "name": "Is this medical advice?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. It is general information about a popular leap model and cannot tell whether your baby is unwell. If you are worried about fever, feeding, sleepiness or crying, contact your pediatrician." } },
+        { "@type": "Question", "name": "Is my due date saved anywhere?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Only on this device. It is kept in your browser so the page remembers it, and it is never sent to a server. Press Clear to remove it." } }
+      ]
     }
-    </script>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Layout Shield: Anti 390px Horizontal Overflow -->
-    <style id="layout-shield">
-        html, body {
-            max-width: 100% !important;
-            width: 100% !important;
-            overflow-x: hidden !important;
-        }
-        main, article, .container {
-            max-width: 100% !important;
-            box-sizing: border-box !important;
-        }
-        .manual-ad-box {
-            width: 100%;
-            max-width: 960px;
-            overflow: hidden;
-            margin: 12px auto;
-        }
-        .manual-ad-box ins {
-            max-width: 100% !important;
-            display: block;
-        }
-    </style>
-  <link rel="alternate" type="application/rss+xml" title="Baby Leap Calculator | Wonder Weeks &amp; Growth Milestones" href="https://us-baby-milestone-calculator.enjoy-onepage.com/rss.xml">
-  <link rel="sitemap" type="application/xml" href="https://us-baby-milestone-calculator.enjoy-onepage.com/sitemap.xml">
+  ]
+}
+</script>
+<!-- ADSENSE START: loader -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
+<!-- ADSENSE END: loader -->
+<style>
+:root{--bg:#faf7ff;--card:#fff;--ink:#1f1633;--muted:#6b6280;--accent:#7c3aed;--accent-2:#ede9fe;--line:#e7e2f3}
+*{box-sizing:border-box}
+html,body{margin:0;max-width:100%;overflow-x:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.header{background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;text-align:center;padding:26px 16px 22px}
+.header h1{margin:0;font-size:1.7rem}
+.header-sub{opacity:.92;margin-top:6px;font-size:.95rem}
+.wrap{max-width:1080px;margin:0 auto;padding:12px 14px 8px}
+.grid2{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:1024px){.grid2{grid-template-columns:1fr 1fr;align-items:start}.result{position:sticky;top:12px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:14px 0}
+.grid2 .card{margin:0}
+.card h2{font-size:1.1rem;margin:0 0 10px}
+.lbl{display:block;font-weight:600;margin:4px 0 6px}
+input[type=date],select{width:100%;font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.hint{font-size:.88rem;color:var(--muted);margin:8px 0}
+.quick,.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.btn{font:inherit;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:10px;padding:9px 14px;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.err{color:#b91c1c;font-weight:600;margin:10px 0 0}
+.age{font-size:1.25rem;font-weight:700}
+.status{margin-top:8px;font-size:1.05rem}
+.next{margin-top:6px;color:var(--muted)}
+.tip{margin-top:10px;background:var(--accent-2);border-radius:12px;padding:10px 12px;font-size:.93rem}
+details{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}
+summary{cursor:pointer;font-weight:600}
+.row3{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px;margin-top:8px}
+.table-wrap{overflow-x:auto}
+table.tl{width:100%;border-collapse:collapse;font-size:.93rem}
+.tl th,.tl td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+.tl tr.now{background:var(--accent-2)}
+.tl tr.past td{color:var(--muted)}
+.badge{display:inline-block;border-radius:999px;padding:1px 9px;font-size:.8rem;border:1px solid var(--line);white-space:nowrap}
+.badge.now{background:var(--accent);color:#fff;border-color:var(--accent)}
+.muted{color:var(--muted)}
+.faq-item h3{font-size:1rem;margin:12px 0 4px}
+.faq-item p{margin:0;color:#3b3450}
+.notice{border-color:#fcd34d;background:#fffbeb}
+.src{font-size:.85rem;color:var(--muted)}
+.ad-box{max-width:1080px;margin:10px auto;padding:0 14px;background:transparent;overflow:hidden;text-align:center}
+.ad-top ins{max-height:90px}
+.footer{text-align:center;font-size:.85rem;color:var(--muted);padding:18px 14px 28px}
+.footer a{color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#1f1633;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw}
+.toast.show{opacity:1}
+</style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+<body>
+<header class="header">
+  <h1>Baby Leap Calculator</h1>
+  <div class="header-sub">Mental leap weeks from your baby's due date · free, private, no sign-up</div>
+</header>
 
-    <!-- Header -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2 font-black text-slate-900 text-lg sm:text-xl tracking-tight">
-                <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm font-black shadow-sm">1P</span>
-                <span>Baby Developmental Leap Calculator</span>
-            </a>
-            <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
-                2026 US Edition
-            </span>
-        </div>
-    </header>
+<!-- ADSENSE START: top -->
+<div class="ad-box ad-top">
+  <ins class="adsbygoogle" style="display:block;height:60px;max-height:90px" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3824727725" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: top -->
 
-    <!-- Main Workspace -->
-    <main class="max-w-6xl mx-auto px-4 py-6 flex-grow w-full">
-        <!-- Title Banner -->
-        <div class="mb-8 text-center max-w-2xl mx-auto">
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight mb-2">Baby Developmental Leap Calculator</h1>
-            <p class="text-sm sm:text-base text-slate-600">Calculate your baby's developmental mental leaps based on due date. Understand fussy phases and emerging motor skills.</p>
-        </div>
-
-        <!-- 2-Column Gold Standard Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <!-- Left: Input Form (6 cols) -->
-            <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200">
-                <h2 class="text-base font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100 flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-                    <span>Input Parameters</span>
-                </h2>
-                
-        <div class="space-y-4">
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Primary Value / Amount ($)</label>
-                <div class="relative">
-                    <span class="absolute left-3 top-3 text-slate-400 font-bold">$</span>
-                    <input type="text" id="primaryVal" value="1,000" class="w-full pl-8 pr-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="1,000">
-                </div>
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Secondary Parameter / Multiplier</label>
-                <input type="number" id="secVal" value="12" min="1" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Calculation Category</label>
-                <select id="calcCat" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                    <option value="standard">Standard US Model (Benchmark)</option>
-                    <option value="conservative">Conservative Estimate (-10%)</option>
-                    <option value="growth">Accelerated Target (+15%)</option>
-                </select>
-            </div>
-        </div>
-        
-                <button type="button" onclick="calculate()" class="mt-6 w-full py-3.5 bg-blue-600 hover:bg-blue-700 active:scale-[0.99] text-white font-black text-base rounded-xl shadow-md transition duration-150 cursor-pointer whitespace-nowrap">
-                    Calculate Now
-                </button>
-            </div>
-
-            <!-- Right: Results Card (6 cols sticky) -->
-            <div class="lg:col-span-6 lg:sticky lg:top-24">
-                <div id="resultCard" class="hidden">
-                    
-        <div class="bg-blue-600 text-white p-6 rounded-2xl shadow-md mb-6">
-            <p class="text-xs uppercase font-bold tracking-wider opacity-90 mb-1">Estimated Annual Result</p>
-            <h3 id="resPrimary" class="text-3xl sm:text-4xl font-black tracking-tight">$0</h3>
-            <p class="text-xs mt-2 opacity-80">Calculated under standard US benchmarking formulas</p>
-        </div>
-        <div class="space-y-3 text-sm text-slate-700 bg-white p-5 rounded-2xl border border-slate-200">
-            <div class="flex justify-between pb-2 border-b border-slate-100">
-                <span class="text-slate-500">Monthly Equivalent:</span>
-                <span id="resMonthly" class="font-bold text-slate-900">$0</span>
-            </div>
-            <div class="flex justify-between pt-1">
-                <span class="font-bold text-slate-900">Growth / Variance Index:</span>
-                <span id="resBenchmark" class="font-black text-blue-600">0%</span>
-            </div>
-        </div>
-        
-                    <div class="mt-4 flex gap-3">
-                        <button type="button" onclick="copyResults()" class="flex-1 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm rounded-xl transition shadow-sm cursor-pointer whitespace-nowrap">
-                            Copy Results
-                        </button>
-                        <button type="button" onclick="resetForm()" class="px-5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm rounded-xl transition cursor-pointer whitespace-nowrap">
-                            Reset
-                        </button>
-                    </div>
-                </div>
-                <!-- Initial Placeholder -->
-                <div id="placeholderCard" class="p-8 text-center border-2 border-dashed border-slate-200 rounded-2xl text-slate-400">
-                    <p class="text-sm font-semibold">Enter your inputs on the left and click "Calculate Now" to view full projections.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- E-E-A-T Editorial FAQ Accordion -->
-        <section class="mt-14 max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-2xl border border-slate-200">
-            <h2 class="text-lg sm:text-xl font-black text-slate-900 mb-4">Frequently Asked Questions</h2>
-            <div class="space-y-3">
-                
-    <!-- In-Depth Guidebook CTA Banner (4-1-4 Compliance) -->
-    <div class="mt-8 mb-8 p-6 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl border border-indigo-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        <span class="inline-block px-3 py-1 bg-indigo-600 text-white text-xs font-bold rounded-full mb-2">COMPLETE 2026 HANDBOOK</span>
-        <h3 class="text-lg font-bold text-gray-900">Want to master the statutory details? Read our in-depth guide</h3>
-        <p class="text-xs text-gray-600 mt-1">Explore official calculation formulas, edge-case exemptions, and strategic checklists.</p>
+<main class="wrap">
+  <div class="grid2">
+    <section class="card" aria-labelledby="in-h">
+      <h2 id="in-h">1. Enter the due date</h2>
+      <label for="due" class="lbl">Due date (not the birth date)</label>
+      <input id="due" type="date" autocomplete="off">
+      <p class="hint">💡 Leaps are counted from the due date. A baby born two weeks early reaches each leap about two weeks later by birthday.</p>
+      <div class="quick">
+        <button type="button" class="btn" id="btn-clear">Clear</button>
       </div>
-      <a href="/guides/guide.html" class="whitespace-nowrap px-5 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl shadow-md transition flex items-center gap-2 text-xs shrink-0">
-        Read In-Depth Guide &rarr;
-      </a>
-    </div>
-
-    <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>How accurate are these calculations?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Calculations use 2026 statutory formulas and verified standard economic models. While highly accurate for benchmarking, always consult a certified professional for individual legal or financial filings.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Is my personal or financial data stored?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        No. 100% of the computations occur locally in your browser's JavaScript engine. Zero personal or financial data is transmitted to or saved on external servers.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Can I export or share my calculation results?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Yes! Click the "Copy Results" button to copy a formatted summary with a link directly to your clipboard for sharing via Slack, email, or messaging apps.
-                    </p>
-                </details>
-            </div>
-        </section>
-    </main>
-
-    <!-- Floating Toast Notification -->
-    <div id="toastNotification" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white px-5 py-2.5 rounded-full text-xs font-bold shadow-2xl opacity-0 pointer-events-none transition-opacity duration-200 z-50">
-        Copied to clipboard!
-    </div>
-
-    <!-- Modern Trust Footer -->
-    <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500 mt-12">
-        <div class="max-w-6xl mx-auto px-4 space-y-3">
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-semibold text-slate-600">
-                <a href="/terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
-                <span class="text-slate-300">|</span>
-                <a href="/privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
-                <span class="text-slate-300">|</span>
-                <a href="/disclaimer.html" class="hover:text-blue-600 transition">Disclaimer</a>
-            </div>
-            <p class="max-w-xl mx-auto text-slate-400">
-                This tool is provided for educational and estimation purposes only. All calculations run client-side.
-            </p>
-            <p>&copy; 2026 Baby Developmental Leap Calculator. All rights reserved.</p>
+      <details id="birth-helper">
+        <summary>Only know the birth date?</summary>
+        <label for="birth" class="lbl">Birth date and weeks of pregnancy at birth</label>
+        <div class="row3">
+          <input id="birth" type="date" aria-label="Birth date">
+          <select id="ga-w" aria-label="Weeks of pregnancy at birth"></select>
+          <select id="ga-d" aria-label="Extra days"></select>
         </div>
-    </footer>
+        <div class="quick"><button type="button" class="btn primary" id="btn-birth">Use this to set the due date</button></div>
+        <p class="hint">Due date = birth date + (40 weeks − pregnancy length at birth).</p>
+      </details>
+      <p class="err" id="err" role="alert" hidden></p>
+    </section>
 
-    <!-- Logic Script -->
-    <script>
-        
-        function calculate() {
-            const prim = parseFloat(document.getElementById('primaryVal').value.replace(/,/g, '')) || 0;
-            const sec = parseFloat(document.getElementById('secVal').value) || 1;
-            const cat = document.getElementById('calcCat').value;
-            
-            let mult = 1.0;
-            if (cat === 'conservative') mult = 0.90;
-            if (cat === 'growth') mult = 1.15;
-            
-            const total = prim * sec * mult;
-            const monthly = total / 12;
-            const rate = ((total / (prim || 1)) * 10).toFixed(1);
-            
-            document.getElementById('resPrimary').textContent = '$' + Math.round(total).toLocaleString('en-US');
-            document.getElementById('resMonthly').textContent = '$' + Math.round(monthly).toLocaleString('en-US');
-            document.getElementById('resBenchmark').textContent = rate + '%';
-            
-            document.getElementById('resultCard').classList.remove('hidden');
-        }
-        
+    <section class="card result" aria-labelledby="out-h" aria-live="polite">
+      <h2 id="out-h">2. Where your baby is now</h2>
+      <div class="age" id="out-age">Enter a due date to see the leap timeline.</div>
+      <div class="status" id="out-status"></div>
+      <div class="next" id="out-next"></div>
+      <div class="tip" id="out-tip" hidden></div>
+      <div class="actions">
+        <button type="button" class="btn primary" id="btn-copy" disabled>📋 Copy result</button>
+        <button type="button" class="btn" id="btn-share" disabled>📤 Share link</button>
+      </div>
+    </section>
+  </div>
 
-        function copyResults() {
-            const resCard = document.getElementById('resultCard');
-            const lines = [];
-            lines.push("Baby Developmental Leap Calculator - Calculation Summary");
-            lines.push("=============================");
-            resCard.querySelectorAll('.flex.justify-between').forEach(el => {
-                const k = el.querySelector('span:first-child')?.innerText || '';
-                const v = el.querySelector('span:last-child')?.innerText || '';
-                if (k && v) lines.push(k + ' ' + v);
-            });
-            lines.push("-----------------------------");
-            lines.push("👉 Try it here: https://us-baby-milestone-calculator.enjoy-onepage.com/");
-            
-            const textToCopy = lines.join('\n');
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(textToCopy).then(() => showToast());
-            } else {
-                const ta = document.createElement('textarea');
-                ta.value = textToCopy;
-                document.body.appendChild(ta);
-                ta.select();
-                document.execCommand('copy');
-                document.body.removeChild(ta);
-                showToast();
-            }
-        }
+<!-- ADSENSE START: mid (right after the result card) -->
+<div class="ad-box ad-mid">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="1186914926" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: mid -->
 
-        function showToast() {
-            const t = document.getElementById('toastNotification');
-            t.classList.remove('opacity-0', 'pointer-events-none');
-            setTimeout(() => {
-                t.classList.add('opacity-0', 'pointer-events-none');
-            }, 2200);
-        }
+  <section class="card" aria-labelledby="tl-h">
+    <h2 id="tl-h">📅 All 10 leaps with dates</h2>
+    <div class="table-wrap">
+      <table class="tl" id="timeline">
+        <thead><tr><th>Leap</th><th>Weeks after due date</th><th>Dates</th><th>Status</th></tr></thead>
+        <tbody id="tl-body"><tr><td colspan="4" class="muted">Enter a due date above.</td></tr></tbody>
+      </table>
+    </div>
+  </section>
 
-        function resetForm() {
-            document.getElementById('resultCard').classList.add('hidden');
-            document.getElementById('placeholderCard').classList.remove('hidden');
-        }
+  <section class="card" aria-labelledby="how-h">
+    <h2 id="how-h">🧮 How this calculator works</h2>
+    <p>The calculator counts the days from your baby's due date to today on your device's calendar. Each leap window uses the weeks-after-due-date ranges in the leap chart published by The Wonder Weeks, the book and app by Frans Plooij and Hetty van de Rijt. A day is inside a leap when it falls on or after the start week and before the end week, so leap 4, for example, runs from day 98 to day 139 after the due date.</p>
+    <ul>
+      <li>Day 0 is the due date itself, and weeks are counted from that day.</li>
+      <li>Dates use your local calendar, so time zones and daylight saving time do not shift them.</li>
+      <li>The windows show when fussy signs are most likely. Every baby is different, and some show very few signs.</li>
+    </ul>
+    <p class="src">Source: leap week ranges from the official leap chart at thewonderweeks.com, checked September 30, 2026. The descriptions on this page are our own summaries.</p>
+  </section>
 
-        // Auto calculate on load
-        window.addEventListener('DOMContentLoaded', () => {
-            calculate();
-            document.getElementById('placeholderCard').classList.add('hidden');
-        });
-    </script>
+  <section class="card" id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">❓ Frequently asked questions</h2>
+    <div class="faq-item"><h3>Why use the due date instead of the birth date?</h3><p>Leap timing follows how far development has come since conception, so it is counted from the due date. A baby born two weeks early usually reaches each leap about two weeks later by birthday, and a baby born late reaches it earlier.</p></div>
+    <div class="faq-item"><h3>How long does a leap last?</h3><p>It varies. The fussy phase can last from a day to several weeks, and the windows in the table show when signs are most likely, not a fixed schedule. Some babies show very few signs.</p></div>
+    <div class="faq-item"><h3>My baby was born early. What do I enter?</h3><p>Enter the original due date. If you only know the birth date, open 'Only know the birth date?' and enter the birth date with the weeks and days of pregnancy at birth. The calculator works out the due date for you.</p></div>
+    <div class="faq-item"><h3>Is this medical advice?</h3><p>No. It is general information about a popular leap model and cannot tell whether your baby is unwell. If you are worried about fever, feeding, sleepiness or crying, contact your pediatrician.</p></div>
+    <div class="faq-item"><h3>Is my due date saved anywhere?</h3><p>Only on this device. It is kept in your browser so the page remembers it, and it is never sent to a server. Press Clear to remove it.</p></div>
+  </section>
+
+  <section class="card notice" aria-labelledby="note-h">
+    <h2 id="note-h">⚠️ Please note</h2>
+    <p>This calculator is general information, not medical advice. It is not affiliated with or endorsed by The Wonder Weeks. If your baby has a fever, feeds poorly, is unusually sleepy or cries in a way that worries you, call your pediatrician.</p>
+  </section>
+</main>
+
+<!-- ADSENSE START: bottom -->
+<div class="ad-box ad-bottom">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3416334507" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: bottom -->
+
+<footer class="footer">
+  <p>A free baby leap calculator. Everything is calculated on your device, and your dates are never sent to a server.</p>
+  <p><a href="/disclaimer.html">Disclaimer</a> | <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
+</footer>
+
+<div id="global-ux-toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- LOGIC START -->
+<script>
+(function () {
+  'use strict';
+  var SITE = 'https://us-baby-milestone-calculator.enjoy-onepage.com';
+  var TOOL_NAME = 'Baby Leap Calculator';
+  var STORE = 'babyleap.due.v1';
+  var MAX_FUTURE_DAYS = 300;    /* a due date is at most about 10 months away */
+  var MAX_PAST_DAYS = 5 * 366;  /* older than about 5 years is almost surely a typo */
+  /* Weeks after the due date; a day d is inside a leap when start*7 <= d < end*7 (official chart, checked 2026-09-30) */
+  var LEAPS = [
+    {"n": 1, "start": 4, "end": 6, "name": "Changing sensations", "changes": "The senses sharpen quickly, so sights, sounds and touch can feel brand new.", "signs": "More crying, wanting to be held more, and lighter or shorter sleep.", "helps": "Plenty of holding and skin-to-skin contact, a calm room and gentle, steady routines."},
+    {"n": 2, "start": 7, "end": 10, "name": "Patterns", "changes": "Baby starts to notice simple patterns such as shapes, light and dark, and their own hands and feet.", "signs": "Wanting more attention, fussier feeds and more waking at night.", "helps": "Face-to-face play, high-contrast pictures and time to watch and grab their own hands."},
+    {"n": 3, "start": 11, "end": 13, "name": "Smooth transitions", "changes": "Baby can follow smoother movements and small changes in voice, sound and light.", "signs": "Extra clinginess and sudden fussing during everyday care such as baths.", "helps": "Vary your voice, move slowly while you play, and try gentle swaying games."},
+    {"n": 4, "start": 14, "end": 20, "name": "Events", "changes": "Short actions start to link into one event, so reaching, grabbing and babbling take off.", "signs": "Often the longest fussy stretch; it can overlap the 4-month sleep regression, with more night waking.", "helps": "Toys within reach, answer the babbling, and keep the bedtime routine steady."},
+    {"n": 5, "start": 22, "end": 27, "name": "Relationships", "changes": "Baby begins to understand distance between things and people, including you.", "signs": "Separation worries: crying when you leave the room and wariness of strangers.", "helps": "Peekaboo, saying goodbye instead of slipping away, and short, predictable separations."},
+    {"n": 6, "start": 33, "end": 38, "name": "Categories", "changes": "Baby starts grouping things such as animals, foods and people by what they share.", "signs": "Strong likes and dislikes; resisting diaper changes and getting dressed.", "helps": "Name things as groups, read picture books together and sort toys into piles."},
+    {"n": 7, "start": 41, "end": 47, "name": "Sequences", "changes": "Steps in the right order start to make sense: stacking, filling and emptying, putting things back.", "signs": "Wanting to do it alone and frustration when interrupted.", "helps": "Give time to try, play simple step-by-step games and let them help with small tasks."},
+    {"n": 8, "start": 51, "end": 55, "name": "Programs", "changes": "Sequences combine into routines such as getting dressed, mealtime or going out.", "signs": "Tantrums when plans change and more testing of limits.", "helps": "Keep routines consistent, say what happens next and offer two simple choices."},
+    {"n": 9, "start": 59, "end": 65, "name": "Principles", "changes": "Toddlers try different strategies, negotiate and start simple pretend play.", "signs": "A 'no!' phase; some hit or bite when frustrated.", "helps": "Calm, consistent limits, put feelings into words and model gentle behavior."},
+    {"n": 10, "start": 70, "end": 75, "name": "Systems", "changes": "Bigger ideas take shape: family roles, 'me' and 'you', and an early sense of right and wrong.", "signs": "A strong will, quick mood swings and bedtime resistance.", "helps": "Acknowledge the new independence, give small responsibilities and keep routines predictable."}
+  ];
+  var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  function $(id) { return document.getElementById(id); }
+  function on(id, ev, fn) { var el = $(id); if (el) el.addEventListener(ev, fn); }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function parseYMD(s) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(s || '').trim());
+    if (!m) return null;
+    var y = +m[1], mo = +m[2], d = +m[3];
+    var dt = new Date(y, mo - 1, d);
+    if (dt.getFullYear() !== y || dt.getMonth() !== mo - 1 || dt.getDate() !== d) return null;
+    return dt;
+  }
+  function toYMD(d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  function addDays(d, n) { var x = new Date(d.getFullYear(), d.getMonth(), d.getDate()); x.setDate(x.getDate() + n); return x; }
+  function dayDiff(a, b) { return Math.round((Date.UTC(b.getFullYear(), b.getMonth(), b.getDate()) - Date.UTC(a.getFullYear(), a.getMonth(), a.getDate())) / 86400000); }
+  function today() { var n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()); }
+  function fmt(d) { return MONTHS[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear(); }
+  function plural(n, w) { return n + ' ' + w + (n === 1 ? '' : 's'); }
+  function ageText(days) { var w = Math.floor(days / 7), r = days % 7; return plural(w, 'week') + (r ? ' ' + plural(r, 'day') : ''); }
+  function setText(id, t) { var el = $(id); if (el) el.textContent = t; }
+
+  function compute(due, now) {
+    var d = dayDiff(due, now);
+    var rows = LEAPS.map(function (L) {
+      var s = L.start * 7, e = L.end * 7;
+      return { L: L, s: s, e: e, start: addDays(due, s), end: addDays(due, e - 1),
+               status: d >= e ? 'past' : (d >= s ? 'now' : 'upcoming') };
+    });
+    var cur = null, next = null, i;
+    for (i = 0; i < rows.length; i++) { if (rows[i].status === 'now') { cur = rows[i]; break; } }
+    for (i = 0; i < rows.length; i++) { if (rows[i].status === 'upcoming') { next = rows[i]; break; } }
+    return { d: d, rows: rows, cur: cur, next: next };
+  }
+
+  var last = null;  /* {due, now, r, lines} for copy/share */
+
+  function describe(due, now, r) {
+    var d = r.d, age, status, next, tip = '';
+    if (d < 0) age = 'Due in ' + plural(-d, 'day') + ' (' + fmt(due) + ')';
+    else if (d === 0) age = 'The due date is today (' + fmt(due) + ')';
+    else age = ageText(d) + ' after the due date';
+    if (r.cur) {
+      var c = r.cur;
+      status = '🌀 Leap ' + c.L.n + ': ' + c.L.name + ' (fussy window, day ' + (d - c.s + 1) + ' of ' + (c.e - c.s) + ')';
+      next = 'This window runs until ' + fmt(c.end) + '.' +
+             (r.next ? ' Next: leap ' + r.next.L.n + ' (' + r.next.L.name + ') from ' + fmt(r.next.start) + '.' : ' This is the last leap in the chart.');
+      tip = 'What you may notice: ' + c.L.signs + ' What helps: ' + c.L.helps;
+    } else if (r.next) {
+      var n = r.next, until = n.s - d;
+      status = d < 0 ? '👶 Before the due date' : (n.L.n === 1 ? '🌱 Before the first leap' : '☀️ Between leaps: a calmer stretch');
+      next = 'Leap ' + n.L.n + ' (' + n.L.name + ') is expected from ' + fmt(n.start) + ', in ' + plural(until, 'day') + '.';
+      tip = 'Coming next: ' + n.L.changes;
+    } else {
+      status = '🎉 All 10 leaps in the chart are behind you.';
+      next = 'The last window ended on ' + fmt(r.rows[r.rows.length - 1].end) + '.';
+    }
+    return { age: age, status: status, next: next, tip: tip };
+  }
+
+  function renderTable(r) {
+    var body = $('tl-body'); if (!body) return;
+    var html = r.rows.map(function (x) {
+      var label = x.status === 'past' ? 'Done' : x.status === 'now' ? 'Now' : 'In ' + plural(x.s - r.d, 'day');
+      return '<tr class="' + x.status + '"><td><strong>Leap ' + x.L.n + '</strong><br><span class="muted">' + x.L.name + '</span></td>' +
+             '<td>Weeks ' + x.L.start + '–' + x.L.end + '</td><td>' + fmt(x.start) + ' – ' + fmt(x.end) + '</td>' +
+             '<td><span class="badge ' + x.status + '">' + label + '</span></td></tr>';
+    }).join('');
+    body.innerHTML = html;
+  }
+
+  function clearOut() {
+    last = null;
+    setText('out-age', 'Enter a due date to see the leap timeline.');
+    setText('out-status', ''); setText('out-next', '');
+    var tip = $('out-tip'); if (tip) { tip.hidden = true; tip.textContent = ''; }
+    var body = $('tl-body'); if (body) body.innerHTML = '<tr><td colspan="4" class="muted">Enter a due date above.</td></tr>';
+    ['btn-copy', 'btn-share'].forEach(function (id) { var b = $(id); if (b) b.disabled = true; });
+  }
+  function setErr(msg) { var e = $('err'); if (e) { e.textContent = msg || ''; e.hidden = !msg; } }
+  function saveDue(v) { try { if (v) localStorage.setItem(STORE, v); else localStorage.removeItem(STORE); } catch (e) { /* storage unavailable: nothing to save */ } }
+  function syncUrl(v) { try { history.replaceState(null, '', location.pathname + (v ? '?due=' + v : '')); } catch (e) { /* e.g. opened from a file */ } }
+  function link() { return last ? SITE + '/?due=' + toYMD(last.due) : SITE + '/'; }
+
+  function render() {
+    var input = $('due'); if (!input) return;
+    var raw = input.value;
+    if (!raw) { setErr(''); clearOut(); saveDue(''); syncUrl(''); return; }
+    var due = parseYMD(raw);
+    if (!due) { setErr('Please enter a valid date.'); clearOut(); return; }
+    var now = today(), r = compute(due, now);
+    if (r.d < -MAX_FUTURE_DAYS) { setErr('That due date is more than 10 months away. Please check the year.'); clearOut(); return; }
+    if (r.d > MAX_PAST_DAYS) { setErr('That due date is more than 5 years ago. Please check the year.'); clearOut(); return; }
+    setErr('');
+    var t = describe(due, now, r);
+    setText('out-age', t.age); setText('out-status', t.status); setText('out-next', t.next);
+    var tip = $('out-tip'); if (tip) { tip.textContent = t.tip; tip.hidden = !t.tip; }
+    renderTable(r);
+    last = { due: due, now: now, r: r, t: t };
+    ['btn-copy', 'btn-share'].forEach(function (id) { var b = $(id); if (b) b.disabled = false; });
+    saveDue(raw); syncUrl(raw);
+  }
+
+  /* ---------- toast · copy · share (standard: Web Share -> clipboard -> honest message on failure) ---------- */
+  var toastTimer = null;
+  function showToastNotification(msg) {
+    var el = $('global-ux-toast'); if (!el) return;
+    el.textContent = msg; el.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(function () { el.classList.remove('show'); }, 2200);
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    showToastNotification(ok ? 'Copied! Paste it anywhere to share.' : 'Could not copy. Please copy the link from the address bar.');
+  }
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { showToastNotification('Copied! Paste it anywhere to share.'); },
+        function () { fallbackCopy(text); });
+    } else { fallbackCopy(text); }
+  }
+  function summary() {
+    if (!last) return '';
+    return `👶 Baby leap check (${fmt(last.now)})
+Due date: ${fmt(last.due)} · ${last.t.age}
+${last.t.status}
+${last.t.next}
+👉 ${TOOL_NAME}: ${link()}`;
+  }
+
+  on('due', 'input', render);
+  on('due', 'change', render);
+  on('btn-clear', 'click', function () { var i = $('due'); if (i) i.value = ''; render(); });
+  on('btn-copy', 'click', function () { if (last) copyText(summary()); });
+  on('btn-share', 'click', function () {
+    if (!last) return;
+    var text = summary();
+    if (navigator.share) {
+      navigator.share({ title: TOOL_NAME, text: text, url: link() }).catch(function (e) { if (!e || e.name !== 'AbortError') copyText(text); });
+    } else { copyText(text); }
+  });
+
+  (function fillBirthHelper() {
+    var w = $('ga-w'), dd = $('ga-d'); if (!w || !dd) return;
+    var i, o;
+    for (i = 22; i <= 44; i++) { o = document.createElement('option'); o.value = i; o.textContent = i + ' weeks'; if (i === 40) o.selected = true; w.appendChild(o); }
+    for (i = 0; i <= 6; i++) { o = document.createElement('option'); o.value = i; o.textContent = '+ ' + plural(i, 'day'); dd.appendChild(o); }
+  })();
+  on('btn-birth', 'click', function () {
+    var b = parseYMD(($('birth') || {}).value), w = parseInt(($('ga-w') || {}).value, 10), dd = parseInt(($('ga-d') || {}).value, 10);
+    if (!b || isNaN(w) || isNaN(dd)) { showToastNotification('Enter the birth date and the weeks of pregnancy at birth.'); return; }
+    var due = addDays(b, 280 - (w * 7 + dd));
+    var i = $('due'); if (i) i.value = toYMD(due);
+    render();
+    showToastNotification('Due date set to ' + fmt(due) + '.');
+  });
+
+  /* ---------- start: URL (?due=) -> saved date -> empty ---------- */
+  (function init() {
+    var q = null, saved = null;
+    try { q = new URLSearchParams(location.search).get('due'); } catch (e) { q = null; }
+    try { saved = localStorage.getItem(STORE); } catch (e) { saved = null; }
+    var v = q && parseYMD(q) ? q : (saved && parseYMD(saved) ? saved : '');
+    var i = $('due'); if (i) i.value = v;
+    render();
+    if (q && !parseYMD(q)) setErr('The link had an invalid date, so it was ignored.');
+  })();
+})();
+</script>
+<!-- LOGIC END -->
 </body>
 </html>
